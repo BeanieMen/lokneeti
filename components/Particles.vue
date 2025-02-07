@@ -1,16 +1,11 @@
 <template>
-  <!-- Apply the gradient background using Tailwind CSS -->
-  <div class="bg-gradient-to-b from-[#081122] to-[#132244]">
     <NuxtParticles id="tsparticles" :options="options" @load="onLoad" />
-  </div>
 </template>
 
 <script setup lang="ts">
-import type { Container } from 'tsparticles-engine'
-
 const options = {
   fullScreen: {
-    enable: true,
+    enable: false,
     zIndex: 0
   },
   background: {
@@ -97,12 +92,9 @@ const options = {
     }
   },
   detectRetina: true
+} as any
 
-}
-
-const onLoad = (container: Container) => {
-  // Example: Pause the particle animation and resume after 2 seconds
-  container.pause()
-  setTimeout(() => container.play(), 2000)
+const onLoad = (container: any) => {
+  container.play()
 }
 </script>
