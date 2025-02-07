@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[#161616] max-h-screen text-white w-full p-6 md:p-12 lg:p-20 md:py-16 pt-[32px] sm:pt-[48px]">
+    <div class="bg-[#161616] min-h-screen h-screen max-h-screen text-white w-full p-6 md:p-12 lg:p-20 md:py-16 pt-[32px] sm:pt-[48px]">
       <Navbar />
       <div class="max-w-7xl mx-auto ml-5 space-y-12">
         <div class="flex items-start justify-between pb-8 md:pb-16">
